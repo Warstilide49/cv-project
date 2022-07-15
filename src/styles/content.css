@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.main-container{
+	font-family: 'Cabin';
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 5%;
+	gap:2%;
+}
+
+.form-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.preview-container{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form{
+	display:flex;
+	flex-direction: column;
+	gap:1vh;
+}

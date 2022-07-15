@@ -1,0 +1,57 @@
+import React, {Component} from 'react';
+import '../styles/content.css'
+
+class Content extends Component{
+	constructor(props){
+		super(props);
+	}
+
+	render(){
+		return(
+			<div className='main-container'>
+				<div className='form-container'>
+					<h2>Form</h2>
+					<div className='general'>
+						<h4>General Information</h4>
+						<form>
+							<input placeholder='Name'></input>
+							<input placeholder='Email'></input>
+							<input placeholder='Phone number'></input>
+							<input placeholder='Address'></input>
+						</form>
+					</div>
+					<div className='education'>
+						<h4>Education</h4>
+						<form>
+							<input placeholder='Title of Study'></input>
+							<input placeholder='School/College Name'></input>
+							<input placeholder='Year of Joining'></input>
+							<input placeholder='Year of Leaving'></input>
+							<input placeholder='Grade/Percentage'></input>
+						</form>
+						<button id='add-education'>Add</button>
+					</div>
+					<div className='experience'>
+						<h4>Experience</h4>
+						<form>
+							<input placeholder='Company Name'></input>
+							<input placeholder='Position'></input>
+							<input placeholder='Date of Joining'></input>
+							<input placeholder='Date of Leaving'></input>
+							<textarea placeholder='Brief description of work done' rows="4"></textarea>
+						</form>
+						<button id='add-experience'>Add</button>
+					</div>
+					<button>Save in PDF format</button>
+					<button>Load Example</button>
+				</div>
+				<div className='preview-container'>
+					<h2>Preview</h2>
+					{/*<Resume />*/}
+				</div>
+			</div>
+		);
+	}
+}
+
+export default Content

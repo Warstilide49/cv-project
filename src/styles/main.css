@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+
+:root{
+	--bg_1: #F37878; 
+}
+
+body{
+	min-height:100vh;
+	margin:0;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+input{
+	width:40vh;
+}
+
+button{
+	margin:1vh;
+}
+
+.header{
+	font-family: 'Manrope';
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg_1);
+}
