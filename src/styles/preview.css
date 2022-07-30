@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap');
+
+.resume{
+	border: 2px solid black;
+	background: #ededdd;
+	min-height: 141vh;
+	min-width: 100vh;
+	padding: 4vh 3vh;
+}
+
+.top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	min-height: 10vh;
+}
+
+.preview-name{
+	font-size: 5vh;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 700;
+}
+
+.preview-general{
+	font-size: 2vh;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 300;
+	text-align: right;
+}
