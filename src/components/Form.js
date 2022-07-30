@@ -3,6 +3,12 @@ import React, {Component} from 'react';
 class Form extends Component{
 	constructor(props){
 		super(props);
+		this.update=this.update.bind(this);
+	}
+
+	update(){
+		const name=document.querySelector('#name').value;
+		this.props.changeName(name);
 	}
 
 	render(){
@@ -12,7 +18,7 @@ class Form extends Component{
 				<div className='general'>
 					<h4>General Information</h4>
 					<form>
-						<input placeholder='Name'></input>
+						<input id='name' placeholder='Name' onChange={this.update}></input>
 						<input placeholder='Email'></input>
 						<input placeholder='Phone number'></input>
 						<input placeholder='Address'></input>

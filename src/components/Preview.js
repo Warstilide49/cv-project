@@ -10,7 +10,7 @@ class Preview extends Component{
 			<div className='preview-container'>
 				<h2>Preview</h2>
 				<div className='resume'>
-					<div className='name'></div>
+					<div className='name'>{this.props.name}</div>
 					<div className='general'></div>
 					<div className='education'></div>
 					<div className='experience'></div>
