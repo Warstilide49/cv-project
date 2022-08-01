@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 .resume{
 	border: 2px solid black;
@@ -18,13 +18,36 @@
 
 .preview-name{
 	font-size: 5vh;
-	font-family: 'Assistant', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 
 .preview-general{
 	font-size: 2vh;
-	font-family: 'Assistant', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	text-align: right;
+	flex-basis: 30%;
+}
+
+.preview-education{
+	display:flex;
+	flex-direction: column;
+	gap: 1.5vh;
+}
+
+.education{
+	display:flex;
+	gap:5vh;
+}
+
+.preview-experience{
+	display:flex;
+	flex-direction: column;
+	gap: 1.5vh;
+}
+
+.experience{
+	display:flex;
+	gap:5vh;
 }
