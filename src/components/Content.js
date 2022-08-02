@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Form from './Form'
-import Preview from './Preview'
-import Education from './Education'
-import Experience from './Experience'
+import Form from './Form/Form'
+import Preview from './Preview/Preview'
+import Education from './Preview/Education'
+import Experience from './Preview/Experience'
 import '../styles/content.css'
 
 

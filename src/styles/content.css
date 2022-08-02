@@ -26,3 +26,14 @@ form{
 	flex-direction: column;
 	gap:1vh;
 }
+
+.spaced-header{
+	display:flex;
+	justify-content: space-between;
+}
+
+.form-blocks{
+	display:flex;
+	flex-direction:column;
+	gap:1vh;
+}

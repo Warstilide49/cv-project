@@ -27,6 +27,7 @@ input{
 
 button{
 	margin:1vh;
+	align-self:center;
 }
 
 .header{

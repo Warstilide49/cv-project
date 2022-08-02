@@ -3,8 +3,8 @@
 .resume{
 	border: 2px solid black;
 	background: #ededdd;
-	min-height: 141vh;
-	min-width: 100vh;
+	height: 141vh;
+	width: 100vh;
 	padding: 4vh 3vh;
 }
 

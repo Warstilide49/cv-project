@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/preview.css'
+import '../../styles/preview.css'
 
 class Preview extends Component{
 	constructor(props){
