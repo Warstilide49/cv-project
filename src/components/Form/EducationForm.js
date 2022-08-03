@@ -4,16 +4,25 @@ class EduForm extends Component{
 	constructor(props){
 		super(props);
 		this.updateEducation=this.updateEducation.bind(this);
+		this.deleteForm = this.deleteForm.bind(this);
 	}
 
-	updateEducation(){
-		const title=document.querySelector('#edu-title').value;
-		const university=document.querySelector('#edu-uni').value;
-		const start=document.querySelector('#edu-join').value;
-		const end=document.querySelector('#edu-leave').value;
-		const grade=document.querySelector('#edu-grade').value;
+	updateEducation(e){
+		const parent = e.target.parentNode;
+		const title=parent.querySelector('#edu-title').value;
+		const university=parent.querySelector('#edu-uni').value;
+		const start=parent.querySelector('#edu-join').value;
+		const end=parent.querySelector('#edu-leave').value;
+		const grade=parent.querySelector('#edu-grade').value;
 		
-		this.props.addEducation(start, end, title, university, grade);
+		this.props.update({start, end, title, university, grade}, this.props.listId, 'education');
+	}
+
+	deleteForm(e){
+		// Remove form DOM
+		e.target.parentNode.remove();
+		// Remove from state
+		this.props.deleteEdu(this.props.listId)
 	}
 
 	render(){
@@ -26,7 +35,7 @@ class EduForm extends Component{
 					<input id='edu-leave' placeholder='Year of Leaving'></input>
 					<input id='edu-grade' placeholder='Grade/Percentage'></input>
 				</form>
-				<button>Delete</button>
+				<button onClick={this.deleteForm}>Delete</button>
 			</div>
 		);
 	}
