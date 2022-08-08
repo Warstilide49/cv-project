@@ -35,7 +35,7 @@ class EduForm extends Component{
 					<input id='edu-leave' placeholder='Year of Leaving'></input>
 					<input id='edu-grade' placeholder='Grade/Percentage'></input>
 				</form>
-				<button onClick={this.deleteForm}>Delete</button>
+				<button id='delete' onClick={this.deleteForm}>Delete</button>
 			</div>
 		);
 	}

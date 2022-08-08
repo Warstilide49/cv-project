@@ -26,8 +26,11 @@ input{
 }
 
 button{
-	margin:1vh;
+	margin:1vh 0;
 	align-self:center;
+	cursor: pointer;
+	border-radius: 5px;
+	padding:0.5vh 1vh;
 }
 
 .header{
@@ -35,5 +38,15 @@ button{
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	background: var(--bg_1);
+}
+
+.footer{
+	font-family: 'Manrope';
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.6vh;
+	padding: 1.4vh 0;
 	background: var(--bg_1);
 }

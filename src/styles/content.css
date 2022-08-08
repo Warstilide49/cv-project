@@ -37,3 +37,21 @@ form{
 	flex-direction:column;
 	gap:1vh;
 }
+
+#add-education{
+	background: white;
+	color: #38b809;
+	border: 2px solid #38b809;
+}
+
+#delete{
+	background: white;
+	color: #b82e12;
+	border: 2px solid #b82e12;
+}
+
+#save-pdf{
+	background: #38b809;
+	color: white;
+	border: 0;	
+}

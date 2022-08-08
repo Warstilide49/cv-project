@@ -35,7 +35,7 @@ class ExpForm extends Component{
 					<input id='exp-end'placeholder='Date of Leaving'></input>
 					<textarea id='exp-desc' placeholder='Brief description of work done' rows="4"></textarea>
 				</form>
-				<button onClick={this.deleteForm}>Delete</button>
+				<button id='delete' onClick={this.deleteForm}>Delete</button>
 			</div>
 		);
 	}

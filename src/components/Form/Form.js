@@ -75,8 +75,6 @@ class Form extends Component{
 					    })}
 					</div>
 				</div>
-				<button>Save in PDF format</button>
-				<button>Load Example</button>
 			</div>
 		);
 	}

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 .resume{
+	font-family: 'Cabin', sans-serif;
 	border: 2px solid black;
 	background: #ededdd;
 	height: 141vh;
 	width: 100vh;
 	padding: 4vh 3vh;
+	font-size: 2.3vh;
 }
 
 .top{
@@ -50,4 +52,12 @@
 .experience{
 	display:flex;
 	gap:5vh;
+}
+
+.preview-timeline{
+	min-width:24vh;
+}
+
+.preview-company{
+	margin:1.5vh 0vh;
 }

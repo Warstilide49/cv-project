@@ -9,10 +9,10 @@ class Experience extends Component{
 		const {start, end, position, company, description} = this.props;
 		return(
 			<div className='experience'>
-				<div>{start}-{end}</div>
+				<div className='preview-timeline'>{start}-{end}</div>
 				<div>
 					<h3>{position}</h3>
-					<p>{company}</p>
+					<p className='preview-company'>{company}</p>
 					<p>{description}</p>	
 				</div>
 			</div>
