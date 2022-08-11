@@ -43,7 +43,7 @@ class Content extends Component{
 			main_object:{
 				...main,
 				education: main.education.map(item=>{
-					if (section=='education' && item.props.listId===listId){
+					if (section==='education' && item.props.listId===listId){
 						return (<Education start={object.start} end={object.end} title={object.title} university={object.university} grade={object.grade} key={listId} listId={listId}/>)
 					}
 					else{
@@ -51,7 +51,7 @@ class Content extends Component{
 					}
 				}),
 				experience: main.experience.map(item=>{
-					if (section=='experience' && item.props.listId===listId){
+					if (section==='experience' && item.props.listId===listId){
 						return (<Experience start={object.start} end={object.end} position={object.position} company={object.company} description={object.description} key={listId} listId={listId}/>)
 					}
 					else{
@@ -64,7 +64,7 @@ class Content extends Component{
 
 	add(listId, section){
 		const main = this.state.main_object;
-		if(section=='education'){
+		if(section==='education'){
 			this.setState({
 				main_object:{
 					...main,
@@ -84,7 +84,7 @@ class Content extends Component{
 
 	delete(listId, section){
 		const main = this.state.main_object;
-		if(section=='education'){
+		if(section==='education'){
 			this.setState({
 				main_object: {
 					...main,

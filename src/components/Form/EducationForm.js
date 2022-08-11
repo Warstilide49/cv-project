@@ -1,13 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class EduForm extends Component{
-	constructor(props){
-		super(props);
-		this.updateEducation=this.updateEducation.bind(this);
-		this.deleteForm = this.deleteForm.bind(this);
-	}
+function EduForm(props){
 
-	updateEducation(e){
+	const updateEducation = (e) =>{
 		const parent = e.target.parentNode;
 		const title=parent.querySelector('#edu-title').value;
 		const university=parent.querySelector('#edu-uni').value;
@@ -15,30 +10,28 @@ class EduForm extends Component{
 		const end=parent.querySelector('#edu-leave').value;
 		const grade=parent.querySelector('#edu-grade').value;
 		
-		this.props.update({start, end, title, university, grade}, this.props.listId, 'education');
+		props.update({start, end, title, university, grade}, props.listId, 'education');
 	}
 
-	deleteForm(e){
+	const deleteForm = (e) =>{
 		// Remove form DOM
 		e.target.parentNode.remove();
 		// Remove from state
-		this.props.deleteEdu(this.props.listId)
+		props.deleteEdu(props.listId, 'education')
 	}
 
-	render(){
-		return(
-			<div>
-				<form onChange={this.updateEducation}>
-					<input id='edu-title' placeholder='Title of Study'></input>
-					<input id='edu-uni' placeholder='School/College Name'></input>
-					<input id='edu-join'placeholder='Year of Joining'></input>
-					<input id='edu-leave' placeholder='Year of Leaving'></input>
-					<input id='edu-grade' placeholder='Grade/Percentage'></input>
-				</form>
-				<button id='delete' onClick={this.deleteForm}>Delete</button>
-			</div>
-		);
-	}
+	return(
+		<div>
+			<form onChange={updateEducation}>
+				<input id='edu-title' placeholder='Title of Study'></input>
+				<input id='edu-uni' placeholder='School/College Name'></input>
+				<input id='edu-join'placeholder='Year of Joining'></input>
+				<input id='edu-leave' placeholder='Year of Leaving'></input>
+				<input id='edu-grade' placeholder='Grade/Percentage'></input>
+			</form>
+			<button id='delete' onClick={deleteForm}>Delete</button>
+		</div>
+	);
 }
 
 export default EduForm;

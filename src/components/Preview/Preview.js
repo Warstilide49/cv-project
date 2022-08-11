@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactToPrint from 'react-to-print';
 import '../../styles/preview.css'
 
+//cannot use functional components here (react-to-print doesnt support)
 class Preview extends Component{
 	constructor(props){
 		super(props);
