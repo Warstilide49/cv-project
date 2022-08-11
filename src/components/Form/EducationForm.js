@@ -22,7 +22,7 @@ class EduForm extends Component{
 		// Remove form DOM
 		e.target.parentNode.remove();
 		// Remove from state
-		this.props.deleteEdu(this.props.listId)
+		this.props.deleteEdu(this.props.listId, 'education')
 	}
 
 	render(){

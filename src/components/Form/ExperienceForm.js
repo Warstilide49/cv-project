@@ -22,7 +22,7 @@ class ExpForm extends Component{
 		// Remove form DOM
 		e.target.parentNode.remove();
 		// Remove from state
-		this.props.deleteExp(this.props.listId)
+		this.props.deleteExp(this.props.listId, 'experience')
 	}
 
 	render(){
